@@ -2,6 +2,17 @@
 #include <string>
 using namespace std;
 
+long long itc_len(string str)
+{
+	int a = 0;
+	for (int b = 0; str[b] != '\0'; b++)
+	{
+        	a++;
+	}
+	return a;
+}
+
+
 bool itc_isDigit(unsigned char c)
 {
     if ('0' <= c && c <= '9')

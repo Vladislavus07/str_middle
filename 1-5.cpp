@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "middle_str.h"
 using namespace std;
 
 long long itc_len(string str)

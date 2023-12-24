@@ -5,5 +5,6 @@ bool itc_isDigit(unsigned char c);
 unsigned char itc_toUpper(unsigned char c);
 unsigned char itc_chargeCase(unsigned char c);
 bool itc_Compare(string s1, string s2);
+int itc_countWords(string str);
 
 #endif // MIDDLE_STR_H_INCLUDED

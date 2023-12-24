@@ -79,5 +79,6 @@ int str_slovo(string s)
             pr1 = pr2;
         }
     }
+    return kol;
 }
 */

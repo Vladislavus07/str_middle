@@ -53,20 +53,28 @@ bool itc_Compare(string s1, string s2)
         return 0;
 }
 
-/*
-
-bool slo(string sl)
+bool check(string sl)
 {
     for (int i = 0; i < itc_len(sl); i++)
-        if(!(sl[i] >= 'a' && sl[i] <= 'z'))
+        if(!(sl[i] >= 'a' && sl[i] <= 'z') && !(sl[i] >= 'A' && sl[i] <= 'Z'))
             return false;
     return true;
 }
 
-int str_slovo(string s)
+string pol(string str, int pr1, int pr2) {
+    string str_new = "";
+    for (int i = pr1; i < pr2; i++) {
+        if (str[i] != ' ') {
+            str_new += str[i];
+        }
+    }
+    return str_new;
+}
+
+int itc_countWords(string str)
 {
-    s = ' ' + s + ' ';
-    int pr1 = 0, pr2;
+    string s = ' ' + str + ' ';
+    int pr1 = 0, pr2, kol = 0;
     for (int i = 1; i < itc_len(s); i++)
     {
         if (s[i] == ' ')
@@ -74,11 +82,10 @@ int str_slovo(string s)
             pr2 = i;
             string sl;
             sl = pol(s, pr1, pr2);
-            if (slo(sl))
+            if (check(sl))
                 kol++;
             pr1 = pr2;
         }
     }
     return kol;
 }
-*/

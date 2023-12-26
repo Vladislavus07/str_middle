@@ -40,7 +40,7 @@ unsigned char itc_changeCase(unsigned char c)
             return c;
 }
 
-bool itc_Compare(string s1, string s2)
+bool itc_compare(string s1, string s2)
 {
     if (itc_len(s1) == itc_len(s2))
     {

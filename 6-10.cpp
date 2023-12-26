@@ -17,12 +17,12 @@ char itc_sameChar(string str) {
     for(int i = 0; i < itc_len(str); i++)
     {
         int n = 2;
-        for (int j = i; j < itc_len(str); j++)
-            if (str[j] == str[i] && str[j] != ' ')
+        for (int a = i; a < itc_len(str); j++)
+            if (str[a] != ' ' && str[a] == str[i])
             {
                 n--;
                 if (n == 0) 
-                    return str[j];
+                    return str[a];
             }
     }
 }

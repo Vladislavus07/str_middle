@@ -30,7 +30,7 @@ unsigned char itc_toUpper(unsigned char c)
             return c;
 }
 
-unsigned char itc_chargeCase(unsigned char c)
+unsigned char itc_changeCase(unsigned char c)
 {
     if (c >= 'a' && c <= 'z')
             return c - 32;

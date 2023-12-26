@@ -43,13 +43,14 @@ unsigned char itc_chargeCase(unsigned char c)
 bool itc_Compare(string s1, string s2)
 {
     if (itc_len(s1) == itc_len(s2))
-        for (int i = 0; itc_len(s1) > i && itc_len(s2) > i; i++)
+    {
+        for (int i = 0; itc_len(s1) > i && itc_len(s2) > i; i++){
             if (s1[i] == s2[i])
                 return 1;
-            else
-                return 0;
-
-     else
+        }
+        return 0;
+    }
+    else
         return 0;
 }
 
